@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "clientcapes",
+  "version": "${version}",
+  "name": "Client Capes",
+  "description": "Client-side only: show any cape texture on your own player and switch it in-game.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.clientcapes.ClientCapesMod"],
+    "modmenu": ["dev.clientcapes.ModMenuIntegration"]
+  },
+  "mixins": ["clientcapes.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
